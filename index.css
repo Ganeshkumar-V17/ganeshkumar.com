@@ -4,6 +4,9 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #000000;
     color:#fff
@@ -220,20 +223,24 @@ nav .fa-solid{
     }
     .header-text h1{
         font-size: 30px;
+        -webkit-text-stroke:1px #000000;
     }
     nav .fa-solid{
         display:block;
-        font-size:25px;
+        font-size: 25px;
     }
     nav ul{
-        background:yellow;
+        background:rgb(231, 231, 34);
+        color: rgb(67, 66, 66);
         position: fixed;
         top:0;
-        right:-200px;
+        right: -200px;
         width:200px;
         height:100vh;
         padding-top:50px;
         z-index:2;
+        transition: right 0.5s;
+        
     }
     nav ul li{
         display:block;
@@ -244,5 +251,23 @@ nav .fa-solid{
         top:25px;
         left:25px;
         cursor:pointer;
+    }
+    .sub{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
     }
 }
